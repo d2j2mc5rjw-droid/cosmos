@@ -4,7 +4,10 @@
   "version": "0.0.1",
   "description": "天体模拟系统 · Cosmos — 交互式天体引力模拟",
   "main": "main.js",
-  "author": "d2j2mc5rjw-droid",
+  "author": {
+    "name": "d2j2mc5rjw-droid",
+    "email": "309343837+d2j2mc5rjw-droid@users.noreply.github.com"
+  },
   "license": "MIT",
   "scripts": {
     "start": "electron .",
