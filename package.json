@@ -20,6 +20,10 @@
   "build": {
     "appId": "com.d2j2mc5rjw.cosmos",
     "productName": "Cosmos",
+    "publish": {
+      "provider": "github",
+      "releaseType": "release"
+    },
     "directories": {
       "output": "release"
     },
