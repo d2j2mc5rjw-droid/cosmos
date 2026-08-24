@@ -1,7 +1,7 @@
 {
   "name": "cosmos",
   "productName": "Cosmos",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "天体模拟系统 · Cosmos — 交互式天体引力模拟",
   "main": "main.js",
   "author": {
