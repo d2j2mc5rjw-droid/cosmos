@@ -1,0 +1,53 @@
+{
+  "name": "cosmos",
+  "productName": "Cosmos",
+  "version": "0.0.1",
+  "description": "天体模拟系统 · Cosmos — 交互式天体引力模拟",
+  "main": "main.js",
+  "author": "d2j2mc5rjw-droid",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder -mwl"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.d2j2mc5rjw.cosmos",
+    "productName": "Cosmos",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "build/icon.png"
+    ],
+    "mac": {
+      "category": "public.app-category.education",
+      "identity": null,
+      "target": [
+        { "target": "dmg", "arch": ["arm64", "x64"] }
+      ]
+    },
+    "win": {
+      "target": [
+        { "target": "nsis", "arch": ["x64", "arm64"] }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true
+    },
+    "linux": {
+      "category": "Science",
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
+  }
+}
